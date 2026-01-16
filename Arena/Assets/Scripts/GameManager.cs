@@ -104,6 +104,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     private void Start()
     {
         CreateBulletPool();
